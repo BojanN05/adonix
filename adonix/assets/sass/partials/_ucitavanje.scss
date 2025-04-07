@@ -1,0 +1,91 @@
+#ocitvanje{
+    position: fixed;
+    top: 0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $width;
+    height: 100%;
+    background-color: #444444;
+    color: #ffeb3b;
+    z-index: 9999;
+    .ocitavnje-content{
+    
+        
+        .ocitvanje-logo{
+            animation: fadeIn 2s ease-in-out;
+            @keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+            } 
+            
+        }
+
+
+.spinner-container {
+    position: relative;
+    width: 100px;  
+    height: 100px; 
+    animation: rotate 2s linear infinite;
+
+    .spinner {
+        position: absolute;
+        width: $spinner-size;
+        height: $spinner-size;
+        background-color: #fcd200; // Žuta boja
+        animation: move 2s linear infinite;
+
+        &:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        &:nth-child(2) {
+            animation-delay: -$animation-speed / 2;
+        }
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);    // Početna pozicija (gore-levo)
+    }
+    25% {
+        transform: translate(100px, 0); // Kretanje desno
+    }
+    50% {
+        transform: translate(100px, 100px); // Kretanje dole-desno
+    }
+    75% {
+        transform: translate(0, 100px); // Kretanje dole-levo
+    }
+    100% {
+        transform: translate(0, 0); // Povratak na početnu poziciju (gore-levo)
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(50px, 0);
+    }
+    50% {
+        transform: translate(50px, 50px);
+    }
+    75% {
+        transform: translate(0, 50px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+        }
+    }
+
+#glavnikontent{
+    display: none;
+    
+}

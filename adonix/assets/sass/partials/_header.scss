@@ -1,0 +1,35 @@
+.color-header {
+    background-color: #f8f9fa;  
+    color: $crna;  
+  }
+  .color-header .navbar-nav .nav-link {
+    color: $crna; 
+    transition: color 0.3s;  
+  }
+  
+  .color-header .navbar-nav .nav-link:hover {
+    color: $boja; 
+  }
+  
+
+  
+  .color-header .navbar-toggler-icon {
+    color: rgb(255, 0, 0);  
+  }
+  
+  .color-header .form-control {
+    background-color: $boja;  
+    color: $crna;  
+  }
+  
+  .color-header .btn-outline-success {
+    color: $boja;  
+  }
+  
+  .color-header .btn-outline-success:hover {
+    color: rgb(251, 255, 0);  
+  }
+  
+  
+  
+  
